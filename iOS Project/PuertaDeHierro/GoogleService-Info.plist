@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>442464985582-j5g43hkfpfess0cq5597646rosomk3kn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.442464985582-j5g43hkfpfess0cq5597646rosomk3kn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCU7Pn08bWD0y3PcZvVI_bhWXMfcgZwXpU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>442464985582</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>PDH.PuertaDeHierro</string>
+	<key>PROJECT_ID</key>
+	<string>puertadehierro-a797c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>puertadehierro-a797c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:442464985582:ios:3c28f5ea9a3e1157</string>
+	<key>DATABASE_URL</key>
+	<string>https://puertadehierro-a797c.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,6 @@
+framework module Pods_PuertaDeHierro {
+  umbrella header "Pods-PuertaDeHierro-umbrella.h"
+
+  export *
+  module * { export * }
+}
