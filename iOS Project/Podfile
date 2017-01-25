@@ -8,5 +8,6 @@ target 'PuertaDeHierro' do
   # Pods for PuertaDeHierro
 
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
 
 end

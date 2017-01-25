@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 class loginViewController: UIViewController {
 
+    @IBOutlet weak var logButton: roundedButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,5 +34,10 @@ class loginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func logInPressed(_ sender: Any) {
+        FIRAuth
+    }
+    
 
 }

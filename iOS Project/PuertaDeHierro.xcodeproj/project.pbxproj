@@ -15,7 +15,7 @@
 		74AA92B01E37A648009C3992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AA92AE1E37A648009C3992 /* Main.storyboard */; };
 		74AA92B21E37A648009C3992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74AA92B11E37A648009C3992 /* Assets.xcassets */; };
 		74AA92B51E37A648009C3992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AA92B31E37A648009C3992 /* LaunchScreen.storyboard */; };
-		86654B00E6DDE9CE63F9E300 /* Pods_PuertaDeHierro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0203CE06E6126F2BEE63AADA /* Pods_PuertaDeHierro.framework */; };
+		86654B00E6DDE9CE63F9E300 /* Pods_PuertaDeHierro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0203CE06E6126F2BEE63AADA /* Pods_PuertaDeHierro.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
