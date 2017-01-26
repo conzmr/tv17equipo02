@@ -10,6 +10,7 @@
     <!--
     Cut map ex http://jsfiddle.net/highcharts/TUy7x/1/
     -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
 </head>
 <body>
   <div class="outer">
@@ -19,11 +20,14 @@
             </div>
           </div>
           <form action="index.html" method="post">
-              <input type="text" name="login-username" placeholder="&#xf0f0; username">
-              <input type="password" name="login-password" placeholder="&#xf023; password">
-              <input type="button" name="login-button" value="Login">
+              <input id="username" type="text" name="login-username" placeholder="&#xf0f0; username">
+              <input id="passwd" type="password" name="login-password" placeholder="&#xf023; password">
+              <input id="btn" type="button" name="login-button" value="Login">
+              <p id="error"></p>
           </form>
   </div>
   </div>
+  <script src="../js/authentication.js">
+  </script>
 </body>
 </html>
