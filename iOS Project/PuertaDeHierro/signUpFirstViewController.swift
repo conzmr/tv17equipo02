@@ -8,7 +8,7 @@
 
 import UIKit
 
-class signUpFirstViewController: UIViewController {
+class signUpFirstViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var continueBtn: roundedButton!
     

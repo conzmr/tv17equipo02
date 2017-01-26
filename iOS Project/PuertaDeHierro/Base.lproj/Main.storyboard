@@ -333,7 +333,7 @@
                                 <rect key="frame" x="47" y="392" width="281" height="50"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rjh-XB-sH2">
                                 <rect key="frame" x="47" y="242" width="281" height="50"/>
@@ -527,7 +527,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="countryTxt" destination="vV2-zZ-faE" id="1RR-aA-0I9"/>
                         <outlet property="doneButton" destination="t7h-dD-htj" id="xWO-Ct-V9G"/>
+                        <outlet property="heightTxt" destination="h63-qG-bCq" id="WAw-xk-gl6"/>
+                        <outlet property="phoneTxt" destination="xTe-da-wRZ" id="MeD-wV-fdu"/>
+                        <outlet property="weightTxt" destination="8TI-Ae-RXZ" id="mJn-6B-ir4"/>
                         <outlet property="welcomeLabel" destination="GxU-TO-w9L" id="iuB-JB-jxl"/>
                     </connections>
                 </viewController>
@@ -541,6 +545,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="H8c-sI-ECw"/>
-        <segue reference="HT7-06-ADf"/>
+        <segue reference="t22-UG-5zp"/>
     </inferredMetricsTieBreakers>
 </document>
