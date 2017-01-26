@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		195E6A9D1E3A83DF00F6E88E /* serviceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E6A9C1E3A83DF00F6E88E /* serviceListViewController.swift */; };
+		195E6A9F1E3AA1E600F6E88E /* serviceCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E6A9E1E3AA1E600F6E88E /* serviceCellTableViewCell.swift */; };
+		195E6AA51E3AB9CA00F6E88E /* contractTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E6AA41E3AB9CA00F6E88E /* contractTableViewController.swift */; };
 		1972B9231E38FE1B005C0C43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1972B9221E38FE1B005C0C43 /* GoogleService-Info.plist */; };
 		19BEA7FB1E39F12000B8E1BB /* SectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BEA7FA1E39F12000B8E1BB /* SectionRow.swift */; };
 		19BEA7FD1E39F46300B8E1BB /* servicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BEA7FC1E39F46300B8E1BB /* servicesViewController.swift */; };
@@ -26,6 +29,9 @@
 
 /* Begin PBXFileReference section */
 		0203CE06E6126F2BEE63AADA /* Pods_PuertaDeHierro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuertaDeHierro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		195E6A9C1E3A83DF00F6E88E /* serviceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = serviceListViewController.swift; sourceTree = "<group>"; };
+		195E6A9E1E3AA1E600F6E88E /* serviceCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = serviceCellTableViewCell.swift; sourceTree = "<group>"; };
+		195E6AA41E3AB9CA00F6E88E /* contractTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contractTableViewController.swift; sourceTree = "<group>"; };
 		1972B9221E38FE1B005C0C43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		19BEA7FA1E39F12000B8E1BB /* SectionRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionRow.swift; sourceTree = "<group>"; };
 		19BEA7FC1E39F46300B8E1BB /* servicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = servicesViewController.swift; sourceTree = "<group>"; };
@@ -96,12 +102,15 @@
 		74AA92A91E37A648009C3992 /* PuertaDeHierro */ = {
 			isa = PBXGroup;
 			children = (
+				195E6AA41E3AB9CA00F6E88E /* contractTableViewController.swift */,
 				74AA92AA1E37A648009C3992 /* AppDelegate.swift */,
 				74AA92AC1E37A648009C3992 /* ViewController.swift */,
 				74AA92AE1E37A648009C3992 /* Main.storyboard */,
+				195E6A9C1E3A83DF00F6E88E /* serviceListViewController.swift */,
+				195E6A9E1E3AA1E600F6E88E /* serviceCellTableViewCell.swift */,
 				19BEA8021E3A06F900B8E1BB /* subCellCollectionViewCell.swift */,
-				19BEA7FC1E39F46300B8E1BB /* servicesViewController.swift */,
 				19BEA8001E39FF5800B8E1BB /* ServiceModel.swift */,
+				19BEA7FC1E39F46300B8E1BB /* servicesViewController.swift */,
 				19BEA7FA1E39F12000B8E1BB /* SectionRow.swift */,
 				749540CA1E3972DD00F053D8 /* signUpSecondViewController.swift */,
 				749540C81E3969D200F053D8 /* signUpFirstViewController.swift */,
@@ -245,11 +254,14 @@
 				19BEA8011E39FF5800B8E1BB /* ServiceModel.swift in Sources */,
 				749540CB1E3972DD00F053D8 /* signUpSecondViewController.swift in Sources */,
 				19BEA7FD1E39F46300B8E1BB /* servicesViewController.swift in Sources */,
+				195E6A9F1E3AA1E600F6E88E /* serviceCellTableViewCell.swift in Sources */,
 				19C9FBDD1E3906570039A94C /* loginViewController.swift in Sources */,
 				74AA92AD1E37A648009C3992 /* ViewController.swift in Sources */,
+				195E6AA51E3AB9CA00F6E88E /* contractTableViewController.swift in Sources */,
 				74AA92AB1E37A648009C3992 /* AppDelegate.swift in Sources */,
 				749540C41E382D1D00F053D8 /* roundedButton.swift in Sources */,
 				749540C91E3969D300F053D8 /* signUpFirstViewController.swift in Sources */,
+				195E6A9D1E3A83DF00F6E88E /* serviceListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

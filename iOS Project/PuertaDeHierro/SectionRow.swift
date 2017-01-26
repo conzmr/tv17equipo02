@@ -8,10 +8,14 @@
 
 import UIKit
 
-class SectionRow: UITableViewCell {
+class SectionRow: UITableViewCell, UICollectionViewDataSource {
     
     var cat:Section? = nil
+    var phone:String = ""
+    var maps:String = ""
 
+
+    var delegate: ShowOptionsDelegate? = nil
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,11 +26,6 @@ class SectionRow: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
-}
-
-extension SectionRow : UICollectionViewDataSource {
-
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cat!.object.count
@@ -41,9 +40,11 @@ extension SectionRow : UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(self.cat?.name ?? "None")
-        print(indexPath.row)
+        delegate?.showOptions(name: (self.cat?.name)!, option: indexPath.row)
     }
+    
+    
+
     
 }
 
