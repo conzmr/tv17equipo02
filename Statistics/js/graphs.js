@@ -64,3 +64,26 @@ $(function () {
 
     });
 });
+
+var data = [
+
+  {
+    value: 25,
+    color: "#be1010"
+
+},{
+    value: 11,
+    color: "#040430"
+}];
+
+
+Chart.defaults.global.responsive = true;
+var ctx = document.getElementById("donut-chart").getContext("2d");
+new Chart(ctx).Pie(data, {
+labels : ["January","February"],
+    segmentShowStroke: false,
+    percentageInnerCutout: 50,
+    animationSteps: 50,
+    animationEasing: "linear",
+    animateRotate: true,
+});
