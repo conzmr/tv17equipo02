@@ -179,6 +179,8 @@
                     </view>
                     <connections>
                         <outlet property="logButton" destination="l3w-oC-fhK" id="uEO-R7-m8a"/>
+                        <outlet property="mailText" destination="k9k-dJ-o0M" id="WD6-BQ-KMb"/>
+                        <outlet property="passText" destination="Frh-2k-NH8" id="WMo-WI-M3o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R4K-GV-CC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -273,7 +275,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="1XJ-u7-5ma">
             <objects>
-                <tabBarController id="Kzy-py-LCL" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Homepage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kzy-py-LCL" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="ARa-Wh-fyb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -309,10 +311,10 @@
             </objects>
             <point key="canvasLocation" x="2806" y="265"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up First View Controller-->
         <scene sceneID="GCI-T7-0fh">
             <objects>
-                <viewController id="37P-sg-snb" sceneMemberID="viewController">
+                <viewController id="37P-sg-snb" customClass="signUpFirstViewController" customModule="PuertaDeHierro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QNa-y8-PGx"/>
                         <viewControllerLayoutGuide type="bottom" id="DNv-Fx-I5G"/>
@@ -371,7 +373,8 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hYz-VK-6N9" kind="showDetail" action="showViewController:sender:" id="ej3-4Z-guC"/>
+                                    <action selector="continuePressed:" destination="37P-sg-snb" eventType="touchUpInside" id="Mub-jX-Omi"/>
+                                    <segue destination="hYz-VK-6N9" kind="showDetail" identifier="suContinue" action="showViewController:sender:" id="ej3-4Z-guC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JY7-w5-POv">
@@ -418,15 +421,24 @@
                             <constraint firstItem="9d0-nR-hBm" firstAttribute="width" secondItem="d2I-Tb-EaQ" secondAttribute="width" multiplier="0.4" id="xKH-yE-z55"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="birthdayText" destination="Yzg-8P-SrK" id="QTZ-vf-DNe"/>
+                        <outlet property="continueBtn" destination="W4Q-R0-FEI" id="fwN-ng-UTe"/>
+                        <outlet property="genderText" destination="9d0-nR-hBm" id="raI-QG-kmh"/>
+                        <outlet property="lastNameText" destination="Rjh-XB-sH2" id="uGL-O2-Ntf"/>
+                        <outlet property="mailText" destination="hMh-iZ-00e" id="1VG-l5-tWF"/>
+                        <outlet property="nameText" destination="Sfy-hk-AAU" id="IGY-Uk-w4B"/>
+                        <outlet property="passText" destination="d2I-Tb-EaQ" id="Wht-gj-9vs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zEU-RD-xHK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="89" y="-764"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up Second View Controller-->
         <scene sceneID="0IF-25-qOX">
             <objects>
-                <viewController id="hYz-VK-6N9" sceneMemberID="viewController">
+                <viewController id="hYz-VK-6N9" customClass="signUpSecondViewController" customModule="PuertaDeHierro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a9I-1g-pQE"/>
                         <viewControllerLayoutGuide type="bottom" id="JoO-U6-xaQ"/>
@@ -473,6 +485,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="createAccount:" destination="hYz-VK-6N9" eventType="touchUpInside" id="ICJ-g3-lTH"/>
                                     <segue destination="Kzy-py-LCL" kind="show" id="H8c-sI-ECw"/>
                                 </connections>
                             </button>
@@ -513,6 +526,10 @@
                             <constraint firstItem="8TI-Ae-RXZ" firstAttribute="width" secondItem="vV2-zZ-faE" secondAttribute="width" multiplier="0.45" id="xD9-Kt-Gdl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="doneButton" destination="t7h-dD-htj" id="xWO-Ct-V9G"/>
+                        <outlet property="welcomeLabel" destination="GxU-TO-w9L" id="iuB-JB-jxl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1y-8g-Qdy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -523,7 +540,7 @@
         <image name="Login" width="1920" height="1385"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5yg-yK-1Jw"/>
-        <segue reference="t22-UG-5zp"/>
+        <segue reference="H8c-sI-ECw"/>
+        <segue reference="HT7-06-ADf"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,6 +10,8 @@
 		1972B9231E38FE1B005C0C43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1972B9221E38FE1B005C0C43 /* GoogleService-Info.plist */; };
 		19C9FBDD1E3906570039A94C /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C9FBDC1E3906570039A94C /* loginViewController.swift */; };
 		749540C41E382D1D00F053D8 /* roundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749540C31E382D1D00F053D8 /* roundedButton.swift */; };
+		749540C91E3969D300F053D8 /* signUpFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749540C81E3969D200F053D8 /* signUpFirstViewController.swift */; };
+		749540CB1E3972DD00F053D8 /* signUpSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749540CA1E3972DD00F053D8 /* signUpSecondViewController.swift */; };
 		74AA92AB1E37A648009C3992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA92AA1E37A648009C3992 /* AppDelegate.swift */; };
 		74AA92AD1E37A648009C3992 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA92AC1E37A648009C3992 /* ViewController.swift */; };
 		74AA92B01E37A648009C3992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AA92AE1E37A648009C3992 /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 		19C9FBDC1E3906570039A94C /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		44AE2F13363C6DC0AB8E47E4 /* Pods-PuertaDeHierro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuertaDeHierro.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuertaDeHierro/Pods-PuertaDeHierro.release.xcconfig"; sourceTree = "<group>"; };
 		749540C31E382D1D00F053D8 /* roundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roundedButton.swift; sourceTree = "<group>"; };
+		749540C81E3969D200F053D8 /* signUpFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpFirstViewController.swift; sourceTree = "<group>"; };
+		749540CA1E3972DD00F053D8 /* signUpSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpSecondViewController.swift; sourceTree = "<group>"; };
 		74AA92A71E37A648009C3992 /* PuertaDeHierro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuertaDeHierro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74AA92AA1E37A648009C3992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74AA92AC1E37A648009C3992 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 				74AA92AA1E37A648009C3992 /* AppDelegate.swift */,
 				74AA92AC1E37A648009C3992 /* ViewController.swift */,
 				74AA92AE1E37A648009C3992 /* Main.storyboard */,
+				749540CA1E3972DD00F053D8 /* signUpSecondViewController.swift */,
+				749540C81E3969D200F053D8 /* signUpFirstViewController.swift */,
 				19C9FBDC1E3906570039A94C /* loginViewController.swift */,
 				749540C31E382D1D00F053D8 /* roundedButton.swift */,
 				74AA92B11E37A648009C3992 /* Assets.xcassets */,
@@ -222,10 +228,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				749540CB1E3972DD00F053D8 /* signUpSecondViewController.swift in Sources */,
 				19C9FBDD1E3906570039A94C /* loginViewController.swift in Sources */,
 				74AA92AD1E37A648009C3992 /* ViewController.swift in Sources */,
 				74AA92AB1E37A648009C3992 /* AppDelegate.swift in Sources */,
 				749540C41E382D1D00F053D8 /* roundedButton.swift in Sources */,
+				749540C91E3969D300F053D8 /* signUpFirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
