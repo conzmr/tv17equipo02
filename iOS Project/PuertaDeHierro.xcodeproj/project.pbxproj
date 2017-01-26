@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1972B9231E38FE1B005C0C43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1972B9221E38FE1B005C0C43 /* GoogleService-Info.plist */; };
+		19BEA7FB1E39F12000B8E1BB /* SectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BEA7FA1E39F12000B8E1BB /* SectionRow.swift */; };
+		19BEA7FD1E39F46300B8E1BB /* servicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BEA7FC1E39F46300B8E1BB /* servicesViewController.swift */; };
+		19BEA8011E39FF5800B8E1BB /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BEA8001E39FF5800B8E1BB /* ServiceModel.swift */; };
+		19BEA8031E3A06F900B8E1BB /* subCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BEA8021E3A06F900B8E1BB /* subCellCollectionViewCell.swift */; };
 		19C9FBDD1E3906570039A94C /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C9FBDC1E3906570039A94C /* loginViewController.swift */; };
 		749540C41E382D1D00F053D8 /* roundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749540C31E382D1D00F053D8 /* roundedButton.swift */; };
 		749540C91E3969D300F053D8 /* signUpFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749540C81E3969D200F053D8 /* signUpFirstViewController.swift */; };
@@ -23,6 +27,10 @@
 /* Begin PBXFileReference section */
 		0203CE06E6126F2BEE63AADA /* Pods_PuertaDeHierro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuertaDeHierro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1972B9221E38FE1B005C0C43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		19BEA7FA1E39F12000B8E1BB /* SectionRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionRow.swift; sourceTree = "<group>"; };
+		19BEA7FC1E39F46300B8E1BB /* servicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = servicesViewController.swift; sourceTree = "<group>"; };
+		19BEA8001E39FF5800B8E1BB /* ServiceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		19BEA8021E3A06F900B8E1BB /* subCellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		19C9FBDC1E3906570039A94C /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		44AE2F13363C6DC0AB8E47E4 /* Pods-PuertaDeHierro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuertaDeHierro.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuertaDeHierro/Pods-PuertaDeHierro.release.xcconfig"; sourceTree = "<group>"; };
 		749540C31E382D1D00F053D8 /* roundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roundedButton.swift; sourceTree = "<group>"; };
@@ -91,6 +99,10 @@
 				74AA92AA1E37A648009C3992 /* AppDelegate.swift */,
 				74AA92AC1E37A648009C3992 /* ViewController.swift */,
 				74AA92AE1E37A648009C3992 /* Main.storyboard */,
+				19BEA8021E3A06F900B8E1BB /* subCellCollectionViewCell.swift */,
+				19BEA7FC1E39F46300B8E1BB /* servicesViewController.swift */,
+				19BEA8001E39FF5800B8E1BB /* ServiceModel.swift */,
+				19BEA7FA1E39F12000B8E1BB /* SectionRow.swift */,
 				749540CA1E3972DD00F053D8 /* signUpSecondViewController.swift */,
 				749540C81E3969D200F053D8 /* signUpFirstViewController.swift */,
 				19C9FBDC1E3906570039A94C /* loginViewController.swift */,
@@ -228,7 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19BEA7FB1E39F12000B8E1BB /* SectionRow.swift in Sources */,
+				19BEA8031E3A06F900B8E1BB /* subCellCollectionViewCell.swift in Sources */,
+				19BEA8011E39FF5800B8E1BB /* ServiceModel.swift in Sources */,
 				749540CB1E3972DD00F053D8 /* signUpSecondViewController.swift in Sources */,
+				19BEA7FD1E39F46300B8E1BB /* servicesViewController.swift in Sources */,
 				19C9FBDD1E3906570039A94C /* loginViewController.swift in Sources */,
 				74AA92AD1E37A648009C3992 /* ViewController.swift in Sources */,
 				74AA92AB1E37A648009C3992 /* AppDelegate.swift in Sources */,
