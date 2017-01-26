@@ -1,0 +1,82 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+
+// ============================================ VAR
+
+$D:280px; // size control // diametro
+
+$R:(280px/2); // radio
+
+$B:($R/8);
+
+$O: 0.6; // opacity
+
+$A: 2s; // accelerate
+
+
+html,
+body{
+  height: 100%;
+}
+
+body{
+  overflow: hidden;
+}
+
+.hoja{
+  color: rgb(220,220,226);
+  border-radius: 200px;
+  width:280px;
+  height:280px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hoja:after,
+.hoja:before{
+  content:"";
+  border-radius:100%;
+  position:absolute;
+  top:65px; left:55px;
+  width:190px;
+  height:190px;
+  transform-origin:center center;
+}
+
+.hoja:after{
+  box-shadow:0 $B 0 rgba(22, 140, 230, $O),
+            $B 0 0 rgba(97, 108, 117, $O),
+            0 -$B 0 rgba(0, 112, 250, $O),
+            -$B 0 0 rgba(186, 189, 291, $O);
+  animation: rotar 2s -0.5s linear infinite;
+}
+
+.hoja:before{
+  box-shadow: 0 $B 0 rgba(0, 250, 250, $O),
+              $B 0 0 rgba(0, 200, 200, $O),
+             0 -$B 0 rgba(0, 150, 200, $O),
+             -$B 0 0 rgba(0, 200, 250, $O);
+  animation: rotarIz $A -0.5s linear infinite;
+}
+
+@keyframes rotar{
+  0%{
+    transform:rotateZ(0deg) scaleX(1) scaleY(1);
+  }
+  50%{
+    transform:rotateZ(180deg) scaleX(0.82) scaleY(0.95);
+  }
+  100%{
+    transform:rotateZ(360deg) scaleX(1) scaleY(1);
+  }
+}
+
+@keyframes rotarIz{
+  0%{
+    transform:rotateZ(0deg) scaleX(1) scaleY(1);
+  }
+  50%{
+    transform:rotateZ(-180deg) scaleX(0.95) scaleY(0.85);
+  }
+  100%{
+    transform:rotateZ(-360deg) scaleX(1) scaleY(1);
+  }
+}
