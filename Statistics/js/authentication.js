@@ -12,23 +12,25 @@
   var username = document.getElementById('username');
   var password = document.getElementById('passwd');
   var button = document.getElementById('btn');
+  console.log(username.value);
+  console.log(password.value);
 
-  button.addEventListener('click', e => {
-    console.log('jalo');
-    var email = username.value;
-    var pass = password.value;
-    firebase.auth().signInWithEmailAndPassword(email, pass)
-    .then(function(){
-      console.log("me metiiiiii");
-      window.location = "statistics_dashboard.html";
-    })
+    button.addEventListener('click', e => {
+      console.log('jalo');
+      var email = username.value;
+      var pass = password.value;
+      if(email!="" && pass!=""){
+      firebase.auth().signInWithEmailAndPassword(email, pass)
+      .then(function(){
+        window.location = "statistics_dashboard.html";
+      })
 
-    .catch(function(error){
-      console.log("no me metiiiiii");
-      document.getElementById('error').innerHTML = "ERROR";
-      var errorCode = error.code;
-      var errorMessage = error.message;
-    });
+      .catch(function(error){
+        alert("The user/password is incorrect. Try again.");
+        var errorCode = error.code;
+        var errorMessage = error.message;
+      });
+    }
 
 });
 }());

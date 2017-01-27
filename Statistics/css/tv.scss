@@ -118,12 +118,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfcfcf', end
 
     .hoja{
       margin: auto;
+      display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
     }
 
     form{
-      background:rgba(255,255,255,0.2);
       padding: 40px 20px 20px 20px;
-      border-radius: 15px;
     }
 }
 
@@ -136,9 +138,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfcfcf', end
 header{
   text-align: right;
   display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
   width: 100%;
   min-width: 300px;
   top: 0px;
@@ -147,8 +149,21 @@ header{
   height: auto;
   padding: 10px 40px;
   box-sizing: border-box;
+
+  .blur{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.8);
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+  }
+
   .logo{
     height: 50px;
+    z-index: 1000;
   }
 
   .right{
@@ -198,14 +213,123 @@ header{
 
 .donut-chart{
   position: relative;
-  width: 25%;
+  width: 250px;
   margin: auto;
+  margin-top: 50px;
 }
 
 .charts{
+  padding: 10px;
+  background: rgba(255,255,255,0.6);
+  position: relative;
   margin-top: 120px;
+}
+
+.flex{
   display: -webkit-flex;
     display: flex;
     -webkit-align-items: center;
     align-items: center;
+}
+
+#chartdiv {
+
+  width: 96%;
+  height: 475px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+.amcharts-graph-g1 .amcharts-graph-fill {
+  filter: url(#blur);
+}
+
+.amcharts-graph-g2 .amcharts-graph-fill {
+  filter: url(#blur);
+}
+
+.amcharts-cursor-fill {
+  filter: url(#shadow);
+}
+
+.modal {
+    background-color: rgba(255,255,255,0.8);
+    #chartdiv{
+      color: black;
+    }
+}
+
+#central-logo{
+  height: 100px;
+  margin: auto;
+  margin-top: 110px;
+  margin-left: 110px;
+}
+
+.main{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: absolute;
+}
+
+.selector{
+  cursor: pointer;
+  right: 15%;
+  background: #5B5B5B;
+  text-align: center;
+  text-indent: 20px;
+  width: 130px;
+  border-radius: 10px;
+  height: 20px;
+  font-size: 15px;
+  border-color: transparent;
+  outline: none;
+  color: $light-gray;
+  position: absolute;
+}
+
+.selector-div{
+  width: 100%;
+  position: relative;
+  height: 30px;;
+  top: 30px;
+  margin-bottom: 20px;
+  z-index: 1000;
+}
+
+#barchart{
+  width: 500px;
+  height: 350px;
+  margin: auto;
+}
+
+.blurdiv{
+  background: $main-gray;
+  opacity: .6;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+}
+
+#circ-chart {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+
+.right{
+  height: 40px;
+  z-index: 1000;
+  right: 40px;
+  position: absolute;
+  cursor: pointer;
+
+  &:hover{
+    transform: scale(1.2);
+    transition: .3s;
+  }
 }
