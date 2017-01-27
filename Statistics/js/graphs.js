@@ -1,4 +1,5 @@
 var array = [{code:"MX", z:0},{code:"US", z:0},{code:"CA", z:0}];
+var arrGender= [{gender:"male", c:0},{gender:"female", c:0}];
 
 (function(){
   var config = {
@@ -17,29 +18,29 @@ var array = [{code:"MX", z:0},{code:"US", z:0},{code:"CA", z:0}];
 
     var refUsers = ref.child('users');
 
+
+
     var refOn = refUsers.on('child_added', function(snap){
       if(snap.val().country == "Mexico"){
-        console.log(array[0].code+array[0].z);
         array[0].z++;
-
       }
       else if (snap.val().country == "USA"){
-        console.log(array[1].z);
         array[1].z++;
       }
       else{
-        console.log(array[2].z);
         array[2].z++;
       }
-      return array;
+
+      if(snap.val().gender=="M"){ //SEXO
+        arrGender[0].c++;			//SEXO
+      }else if(snap.val().gender=="F"){ //SEXO
+        arrGender[1].c++; 			//SEXO
+      }
     });
 
 }());
 
-
-$(function () {
-    $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=world-population.json&callback=?', function (data ) {
-
+var loadMap = function () {
         Highcharts.mapChart('container', {
         	colors: ['#86B4F0'],
             chart: {
@@ -84,26 +85,24 @@ $(function () {
                 type: 'mapbubble',
                 name: 'Population 2013',
                 joinBy: ['iso-a2', 'code'],
-                data: refOn,
+                data: array,
                 minSize: 4,
                 maxSize: '8%',
                 tooltip: {
-                    pointFormat: '{point.code}: {point.z}'
+                    pointFormat: '{point.code}: {point.z} thousands'
                 }
             }]
         });
 
-    });
-});
 
 var data = [
 
   {
-    value: 25,
+    value: arrGender[0].c,
     color: "#00C0C7"
 
 },{
-    value: 11,
+    value: arrGender[1].c,
     color: "#040430"
 }];
 
@@ -118,6 +117,8 @@ labels : ["January","February"],
     animationEasing: "linear",
     animateRotate: true,
 });
+
+}; //checkkk
 
 //Chart-blur
 
