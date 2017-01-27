@@ -98,7 +98,7 @@ var data = [
 
   {
     value: arrGender[0].c,
-    color: "#ACACAC"
+    color: "#1851C3"
 
 },{
     value: arrGender[1].c,
@@ -330,70 +330,63 @@ function zoomChart(){
 }
 
 AmCharts.makeChart("barchart",
+{
+"type": "serial",
+"categoryField": "category",
+"startDuration": 1,
+"theme": "light",
+"categoryAxis": {
+  "gridPosition": "start"
+},
+"trendLines": [],
+"graphs": [
   {
-    "type": "serial",
-    "categoryField": "category",
-    "autoMarginOffset": 40,
-    "marginRight": 70,
-    "marginTop": 70,
-    "startDuration": 1,
-    "fontFamily": "",
-    "fontSize": 13,
-    "handDrawn": false,
-    "handDrawScatter": 8,
-    "handDrawThickness": 6,
-    "theme": "chalk",
-    "categoryAxis": {
-      "gridPosition": "start",
-      "axisColor": "#000000"
-    },
-    "trendLines": [],
-    "graphs": [
-      {
-        "balloonText": "Number of  [[title]] in [[category]]: [[value]]",
-        "fillAlphas": 0.9,
-        "id": "AmGraph-1",
-        "title": "men",
-        "type": "column",
-        "valueField": "Men"
-      },
-      {
-        "balloonText": "Number of  [[title]] in [[category]]: [[value]]",
-        "fillAlphas": 0.9,
-        "id": "AmGraph-2",
-        "title": "women",
-        "type": "column",
-        "valueField": "Women"
-      }
-    ],
-    "guides": [],
-    "valueAxes": [
-      {
-        "id": "ValueAxis-1",
-        "title": "Axis title"
-      }
-    ],
-    "allLabels": [],
-    "balloon": {},
-    "titles": [],
-    "dataProvider": [
-      {
-        "category": "EUA",
-        "Men": 1,
-        "Women": 3
-      },
-      {
-        "category": "Canadá",
-        "Men": 6,
-        "Women": 7
-      },
-      {
-        "category": "México",
-        "Men": 2,
-        "Women": 3
-      }
-    ]
+    "fillAlphas": 1,
+    "id": "AmGraph-1",
+    "title": "graph 1",
+    "type": "column",
+    "valueField": "graph 1"
   }
+],
+"guides": [],
+"valueAxes": [
+  {
+    "id": "ValueAxis",
+    "logarithmic": true,
+  }
+],
+"allLabels": [],
+"balloon": {},
+"titles": [
+  {
+    "id": "Title",
+    "size": 15,
+    "text": "Specialities %"
+  }
+],
+"dataProvider": [
+  {
+    "category": "Speciality 1",
+    "graph 1": "100"
+  },
+  {
+    "category": "Speciality 2",
+    "graph 1": "160"
+  },
+  {
+    "category": "Speciality 3",
+    "graph 1": "98"
+  },
+  {
+    "category": "Speciality 4",
+    "graph 1": "156"
+  },
+  {
+    "category": "Speciality 5",
+    "graph 1": "90"
+  }
+]
+}
 );
 
 var gaugeChart = AmCharts.makeChart("circ-chart", {
