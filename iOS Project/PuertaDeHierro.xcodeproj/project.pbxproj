@@ -7,14 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		195E6A9D1E3A83DF00F6E88E /* serviceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E6A9C1E3A83DF00F6E88E /* serviceListViewController.swift */; };
+		195E6A9F1E3AA1E600F6E88E /* serviceCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E6A9E1E3AA1E600F6E88E /* serviceCellTableViewCell.swift */; };
+		195E6AA51E3AB9CA00F6E88E /* contractTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E6AA41E3AB9CA00F6E88E /* contractTableViewController.swift */; };
+		1972B9231E38FE1B005C0C43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1972B9221E38FE1B005C0C43 /* GoogleService-Info.plist */; };
+		19BEA7FB1E39F12000B8E1BB /* SectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BEA7FA1E39F12000B8E1BB /* SectionRow.swift */; };
+		19BEA7FD1E39F46300B8E1BB /* servicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BEA7FC1E39F46300B8E1BB /* servicesViewController.swift */; };
+		19BEA8011E39FF5800B8E1BB /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BEA8001E39FF5800B8E1BB /* ServiceModel.swift */; };
+		19BEA8031E3A06F900B8E1BB /* subCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BEA8021E3A06F900B8E1BB /* subCellCollectionViewCell.swift */; };
+		19C9FBDD1E3906570039A94C /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C9FBDC1E3906570039A94C /* loginViewController.swift */; };
+		749540C41E382D1D00F053D8 /* roundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749540C31E382D1D00F053D8 /* roundedButton.swift */; };
+		749540C91E3969D300F053D8 /* signUpFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749540C81E3969D200F053D8 /* signUpFirstViewController.swift */; };
+		749540CB1E3972DD00F053D8 /* signUpSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749540CA1E3972DD00F053D8 /* signUpSecondViewController.swift */; };
 		74AA92AB1E37A648009C3992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA92AA1E37A648009C3992 /* AppDelegate.swift */; };
 		74AA92AD1E37A648009C3992 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA92AC1E37A648009C3992 /* ViewController.swift */; };
 		74AA92B01E37A648009C3992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AA92AE1E37A648009C3992 /* Main.storyboard */; };
 		74AA92B21E37A648009C3992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74AA92B11E37A648009C3992 /* Assets.xcassets */; };
 		74AA92B51E37A648009C3992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AA92B31E37A648009C3992 /* LaunchScreen.storyboard */; };
+		86654B00E6DDE9CE63F9E300 /* Pods_PuertaDeHierro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0203CE06E6126F2BEE63AADA /* Pods_PuertaDeHierro.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0203CE06E6126F2BEE63AADA /* Pods_PuertaDeHierro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuertaDeHierro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		195E6A9C1E3A83DF00F6E88E /* serviceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = serviceListViewController.swift; sourceTree = "<group>"; };
+		195E6A9E1E3AA1E600F6E88E /* serviceCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = serviceCellTableViewCell.swift; sourceTree = "<group>"; };
+		195E6AA41E3AB9CA00F6E88E /* contractTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contractTableViewController.swift; sourceTree = "<group>"; };
+		1972B9221E38FE1B005C0C43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		19BEA7FA1E39F12000B8E1BB /* SectionRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionRow.swift; sourceTree = "<group>"; };
+		19BEA7FC1E39F46300B8E1BB /* servicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = servicesViewController.swift; sourceTree = "<group>"; };
+		19BEA8001E39FF5800B8E1BB /* ServiceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		19BEA8021E3A06F900B8E1BB /* subCellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		19C9FBDC1E3906570039A94C /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		44AE2F13363C6DC0AB8E47E4 /* Pods-PuertaDeHierro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuertaDeHierro.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuertaDeHierro/Pods-PuertaDeHierro.release.xcconfig"; sourceTree = "<group>"; };
+		749540C31E382D1D00F053D8 /* roundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roundedButton.swift; sourceTree = "<group>"; };
+		749540C81E3969D200F053D8 /* signUpFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpFirstViewController.swift; sourceTree = "<group>"; };
+		749540CA1E3972DD00F053D8 /* signUpSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpSecondViewController.swift; sourceTree = "<group>"; };
 		74AA92A71E37A648009C3992 /* PuertaDeHierro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuertaDeHierro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74AA92AA1E37A648009C3992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74AA92AC1E37A648009C3992 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +49,7 @@
 		74AA92B11E37A648009C3992 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74AA92B41E37A648009C3992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74AA92B61E37A648009C3992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A8E6DF1D9B3FFA383890EA3 /* Pods-PuertaDeHierro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuertaDeHierro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PuertaDeHierro/Pods-PuertaDeHierro.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86654B00E6DDE9CE63F9E300 /* Pods_PuertaDeHierro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		037257C1B8F61D1F4AD9370B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A8E6DF1D9B3FFA383890EA3 /* Pods-PuertaDeHierro.debug.xcconfig */,
+				44AE2F13363C6DC0AB8E47E4 /* Pods-PuertaDeHierro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		35BFF568FCCE7B86F3E8CC66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0203CE06E6126F2BEE63AADA /* Pods_PuertaDeHierro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		74AA929E1E37A648009C3992 = {
 			isa = PBXGroup;
 			children = (
 				74AA92A91E37A648009C3992 /* PuertaDeHierro */,
 				74AA92A81E37A648009C3992 /* Products */,
+				037257C1B8F61D1F4AD9370B /* Pods */,
+				35BFF568FCCE7B86F3E8CC66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +102,24 @@
 		74AA92A91E37A648009C3992 /* PuertaDeHierro */ = {
 			isa = PBXGroup;
 			children = (
+				195E6AA41E3AB9CA00F6E88E /* contractTableViewController.swift */,
 				74AA92AA1E37A648009C3992 /* AppDelegate.swift */,
 				74AA92AC1E37A648009C3992 /* ViewController.swift */,
 				74AA92AE1E37A648009C3992 /* Main.storyboard */,
+				195E6A9C1E3A83DF00F6E88E /* serviceListViewController.swift */,
+				195E6A9E1E3AA1E600F6E88E /* serviceCellTableViewCell.swift */,
+				19BEA8021E3A06F900B8E1BB /* subCellCollectionViewCell.swift */,
+				19BEA8001E39FF5800B8E1BB /* ServiceModel.swift */,
+				19BEA7FC1E39F46300B8E1BB /* servicesViewController.swift */,
+				19BEA7FA1E39F12000B8E1BB /* SectionRow.swift */,
+				749540CA1E3972DD00F053D8 /* signUpSecondViewController.swift */,
+				749540C81E3969D200F053D8 /* signUpFirstViewController.swift */,
+				19C9FBDC1E3906570039A94C /* loginViewController.swift */,
+				749540C31E382D1D00F053D8 /* roundedButton.swift */,
 				74AA92B11E37A648009C3992 /* Assets.xcassets */,
 				74AA92B31E37A648009C3992 /* LaunchScreen.storyboard */,
 				74AA92B61E37A648009C3992 /* Info.plist */,
+				1972B9221E38FE1B005C0C43 /* GoogleService-Info.plist */,
 			);
 			path = PuertaDeHierro;
 			sourceTree = "<group>";
@@ -71,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74AA92B91E37A648009C3992 /* Build configuration list for PBXNativeTarget "PuertaDeHierro" */;
 			buildPhases = (
+				7F1F63D88734DFD4DAC224D5 /* [CP] Check Pods Manifest.lock */,
 				74AA92A31E37A648009C3992 /* Sources */,
 				74AA92A41E37A648009C3992 /* Frameworks */,
 				74AA92A51E37A648009C3992 /* Resources */,
+				F167E5324C10188FF0C07762 /* [CP] Embed Pods Frameworks */,
+				83CE1FE3DFAED44695F76398 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,18 +190,78 @@
 				74AA92B51E37A648009C3992 /* LaunchScreen.storyboard in Resources */,
 				74AA92B21E37A648009C3992 /* Assets.xcassets in Resources */,
 				74AA92B01E37A648009C3992 /* Main.storyboard in Resources */,
+				1972B9231E38FE1B005C0C43 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F1F63D88734DFD4DAC224D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		83CE1FE3DFAED44695F76398 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuertaDeHierro/Pods-PuertaDeHierro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F167E5324C10188FF0C07762 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuertaDeHierro/Pods-PuertaDeHierro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		74AA92A31E37A648009C3992 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19BEA7FB1E39F12000B8E1BB /* SectionRow.swift in Sources */,
+				19BEA8031E3A06F900B8E1BB /* subCellCollectionViewCell.swift in Sources */,
+				19BEA8011E39FF5800B8E1BB /* ServiceModel.swift in Sources */,
+				749540CB1E3972DD00F053D8 /* signUpSecondViewController.swift in Sources */,
+				19BEA7FD1E39F46300B8E1BB /* servicesViewController.swift in Sources */,
+				195E6A9F1E3AA1E600F6E88E /* serviceCellTableViewCell.swift in Sources */,
+				19C9FBDD1E3906570039A94C /* loginViewController.swift in Sources */,
 				74AA92AD1E37A648009C3992 /* ViewController.swift in Sources */,
+				195E6AA51E3AB9CA00F6E88E /* contractTableViewController.swift in Sources */,
 				74AA92AB1E37A648009C3992 /* AppDelegate.swift in Sources */,
+				749540C41E382D1D00F053D8 /* roundedButton.swift in Sources */,
+				749540C91E3969D300F053D8 /* signUpFirstViewController.swift in Sources */,
+				195E6A9D1E3A83DF00F6E88E /* serviceListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +380,7 @@
 		};
 		74AA92BA1E37A648009C3992 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A8E6DF1D9B3FFA383890EA3 /* Pods-PuertaDeHierro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UA26PGF9GK;
@@ -270,6 +394,7 @@
 		};
 		74AA92BB1E37A648009C3992 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44AE2F13363C6DC0AB8E47E4 /* Pods-PuertaDeHierro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UA26PGF9GK;
@@ -300,6 +425,7 @@
 				74AA92BB1E37A648009C3992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

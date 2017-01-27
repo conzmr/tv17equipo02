@@ -1,0 +1,211 @@
+@import "helper/variables";
+@import "helper/fonts";
+@import "helper/hoja";
+
+html {
+
+}
+
+body{
+  margin: 0;
+  overflow-y: scroll;
+  font:{
+    family:"San Francisco";
+    weight: 200;
+  }
+
+  &.blue-bg{
+    background: #010010;
+  }
+
+}
+
+.darkness {
+  position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('../src/img/water5.gif') no-repeat center center;
+    background-size: cover;
+    -webkit-filter: blur(8px);
+    filter: blur(8px);
+
+}
+
+.white-trans{
+  background: white;
+  opacity: .2;
+}
+
+input {
+  font:{
+    family:"San Francisco";
+    weight: 200;
+    size:15px;
+  }
+  outline: none;
+  border: 2px solid rgba(0,0,0,0.4);
+  color: black;
+  display: block;
+  margin: auto;
+  height: 23px;
+  width: 230px;
+  &[name=login-username], &[name=login-password]{
+    text-indent: 10px;
+    font-family: FontAwesome, "San Francisco";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    background: white;
+    opacity: .9;
+
+  }
+
+  &[name=login-username]{
+    border-radius: 10px 10px 0 0;
+  }
+
+  &[name=login-password]{
+    border-radius: 0 0 10px 10px;
+  }
+
+
+
+  &[type=button]{
+    background: rgba(207,207,207,1);
+background: -moz-linear-gradient(left, rgba(207,207,207,1) 0%, rgba(102,171,225,0.92) 34%, rgba(0,166,184,0.84) 64%, rgba(29,70,173,0.77) 91%, rgba(29,70,173,0.75) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(207,207,207,1)), color-stop(34%, rgba(102,171,225,0.92)), color-stop(64%, rgba(0,166,184,0.84)), color-stop(91%, rgba(29,70,173,0.77)), color-stop(100%, rgba(29,70,173,0.75)));
+background: -webkit-linear-gradient(left, rgba(207,207,207,1) 0%, rgba(102,171,225,0.92) 34%, rgba(0,166,184,0.84) 64%, rgba(29,70,173,0.77) 91%, rgba(29,70,173,0.75) 100%);
+background: -o-linear-gradient(left, rgba(207,207,207,1) 0%, rgba(102,171,225,0.92) 34%, rgba(0,166,184,0.84) 64%, rgba(29,70,173,0.77) 91%, rgba(29,70,173,0.75) 100%);
+background: -ms-linear-gradient(left, rgba(207,207,207,1) 0%, rgba(102,171,225,0.92) 34%, rgba(0,166,184,0.84) 64%, rgba(29,70,173,0.77) 91%, rgba(29,70,173,0.75) 100%);
+background: linear-gradient(to right, rgba(207,207,207,1) 0%, rgba(102,171,225,0.92) 34%, rgba(0,166,184,0.84) 64%, rgba(29,70,173,0.77) 91%, rgba(29,70,173,0.75) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfcfcf', endColorstr='#1d46ad', GradientType=1 );
+    height: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 0;
+    cursor: pointer;
+    font-weight: 400;
+    outline: none;
+    width: 130px;
+    color: white;
+    border: 0px solid rgba(0,0,0,0.6);
+    margin-top: 30px;
+
+    &:active{
+      transform: scale(.95);
+      transition: .1s;
+    }
+  }
+}
+
+.outer{
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+
+    .logo-img{
+      position: relative;
+      display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+
+
+    .hoja{
+      margin: auto;
+    }
+
+    form{
+      background:rgba(255,255,255,0.2);
+      padding: 40px 20px 20px 20px;
+      border-radius: 15px;
+    }
+}
+
+.centered-form{
+  margin: auto;
+  margin-top: 40px;
+  height: auto;
+}
+
+header{
+  text-align: right;
+  display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+  width: 100%;
+  min-width: 300px;
+  top: 0px;
+  position: fixed;
+  z-index: 10000;
+  height: auto;
+  padding: 10px 40px;
+  box-sizing: border-box;
+  .logo{
+    height: 50px;
+  }
+
+  .right{
+    cursor: pointer;
+    float: right;
+  }
+
+  #comment-icon{
+    height: 40px;
+    right: 120px;
+    margin-top: 4px;
+  }
+
+  #req-icon{
+    height: 33px;
+    right: 70px;
+  }
+
+  ul{
+    list-style-type: none;
+    width: 100%;
+  }
+
+  li{
+    margin: 0 15px;
+
+    img{
+      vertical-align: middle;
+    }
+  }
+}
+
+.map{
+  position:relative;
+  top: 100px;
+  width: 100%;
+  display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+
+  #container{
+    margin: auto;
+    width: 100%;
+  }
+}
+
+.donut-chart{
+  position: relative;
+  width: 25%;
+  margin: auto;
+}
+
+.charts{
+  margin-top: 120px;
+  display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
