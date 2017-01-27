@@ -35,7 +35,7 @@ class SectionRow: UITableViewCell, UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "subCell", for: indexPath) as! subCellCollectionViewCell
         cell.image.image = cat?.object[indexPath.row].img
         cell.label.text = cat?.object[indexPath.row].name
-        
+        cell.descLabel.text = cat?.object[indexPath.row].desc
         return cell
     }
     
@@ -50,12 +50,12 @@ class SectionRow: UITableViewCell, UICollectionViewDataSource {
 
 extension SectionRow : UICollectionViewDelegateFlowLayout {
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+   /* func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let itemsPerRow:CGFloat = 1
         let hardCodedPadding:CGFloat = 5
         let itemWidth = (collectionView.bounds.width / itemsPerRow) - (2*hardCodedPadding)
         let itemHeight = collectionView.bounds.height - (2 * hardCodedPadding)
         return CGSize(width: itemWidth, height: itemHeight)
-    }
+    }*/
     
 }

@@ -14,7 +14,7 @@ protocol ShowOptionsDelegate {
 }
 
 
-class servicesViewController: UIViewController, UITableViewDataSource, ShowOptionsDelegate {
+class servicesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ShowOptionsDelegate {
     
     @IBOutlet weak var table: UITableView!
     
@@ -51,10 +51,6 @@ class servicesViewController: UIViewController, UITableViewDataSource, ShowOptio
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return ServicesModel.sharedInstance.sections.count
-    }
-    
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return ServicesModel.sharedInstance.sections[section].name
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -107,6 +103,20 @@ class servicesViewController: UIViewController, UITableViewDataSource, ShowOptio
         destination.index = self.selectedoption
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = UIColor.white
+        let label = UILabel()
+        label.text = ServicesModel.sharedInstance.sections[section].name
+        label.font = UIFont.systemFont(ofSize: 25,weight: UIFontWeightHeavy)
+        label.frame = CGRect(x: 10, y: 10, width: 300, height: 45)
+        view.addSubview(label)
+        return view
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 45
+    }
+
 }
 
 

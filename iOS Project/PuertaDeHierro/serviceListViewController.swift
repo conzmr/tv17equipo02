@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseDatabase
 import FirebaseAuth
+import PKHUD
 
 class serviceListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -29,11 +30,12 @@ class serviceListViewController: UIViewController, UITableViewDataSource, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        PKHUD.sharedHUD.show()
         retrieveServices()
         titleLabel.text = specialty
         descLabel.text = ServicesModel.sharedInstance.sections[0].object[index].desc
         image.image = ServicesModel.sharedInstance.sections[0].object[index].img
-        print(specialty.lowercased())
+        print(self.specialty)
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,7 +45,7 @@ class serviceListViewController: UIViewController, UITableViewDataSource, UITabl
     
     func retrieveServices() {
         let ref:FIRDatabaseReference! = FIRDatabase.database().reference()
-        ref.child("specialties").child(specialty.lowercased()).child("services").observeSingleEvent(of: .value, with: { (snapshot) in
+        ref.child("specialties").child(self.specialty).child("services").observeSingleEvent(of: .value, with: { (snapshot) in
             self.services = snapshot.value as! [String: AnyObject]
             //Getting keys into array
             for (key, values) in self.services {

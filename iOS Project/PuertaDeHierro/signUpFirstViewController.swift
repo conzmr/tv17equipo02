@@ -8,7 +8,7 @@
 
 import UIKit
 
-class signUpFirstViewController: UIViewController, UITextFieldDelegate {
+class signUpFirstViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate {
 
     @IBOutlet weak var continueBtn: roundedButton!
     
@@ -19,16 +19,20 @@ class signUpFirstViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var genderText: UITextField!
     @IBOutlet weak var birthdayText: UITextField!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+                
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+
     
 
     /*
@@ -41,7 +45,7 @@ class signUpFirstViewController: UIViewController, UITextFieldDelegate {
     }
     */
     @IBAction func continuePressed(_ sender: Any) {
-        performSegue(withIdentifier: "suContinue", sender: self)
+            performSegue(withIdentifier: "suContinue", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -54,7 +58,11 @@ class signUpFirstViewController: UIViewController, UITextFieldDelegate {
         destination.gender = (genderText.text)!
         destination.bday = (birthdayText.text)!
         
-        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
 
 }
