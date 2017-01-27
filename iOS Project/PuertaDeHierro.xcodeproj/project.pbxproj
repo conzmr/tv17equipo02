@@ -16,9 +16,14 @@
 		19BEA8011E39FF5800B8E1BB /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BEA8001E39FF5800B8E1BB /* ServiceModel.swift */; };
 		19BEA8031E3A06F900B8E1BB /* subCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BEA8021E3A06F900B8E1BB /* subCellCollectionViewCell.swift */; };
 		19C9FBDD1E3906570039A94C /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C9FBDC1E3906570039A94C /* loginViewController.swift */; };
+		74398C561E3B301400DC3184 /* RecommendationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74398C551E3B301400DC3184 /* RecommendationModel.swift */; };
+		74398C581E3B320E00DC3184 /* HeaderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74398C571E3B320E00DC3184 /* HeaderRow.swift */; };
 		749540C41E382D1D00F053D8 /* roundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749540C31E382D1D00F053D8 /* roundedButton.swift */; };
 		749540C91E3969D300F053D8 /* signUpFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749540C81E3969D200F053D8 /* signUpFirstViewController.swift */; };
 		749540CB1E3972DD00F053D8 /* signUpSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749540CA1E3972DD00F053D8 /* signUpSecondViewController.swift */; };
+		749CF62A1E3AE425001AA2A6 /* Pods_PuertaDeHierro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0203CE06E6126F2BEE63AADA /* Pods_PuertaDeHierro.framework */; };
+		749CF62B1E3AE425001AA2A6 /* Pods_PuertaDeHierro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0203CE06E6126F2BEE63AADA /* Pods_PuertaDeHierro.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		749CF62E1E3B0B3A001AA2A6 /* recommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749CF62D1E3B0B39001AA2A6 /* recommendationsViewController.swift */; };
 		74AA92AB1E37A648009C3992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA92AA1E37A648009C3992 /* AppDelegate.swift */; };
 		74AA92AD1E37A648009C3992 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA92AC1E37A648009C3992 /* ViewController.swift */; };
 		74AA92B01E37A648009C3992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AA92AE1E37A648009C3992 /* Main.storyboard */; };
@@ -26,6 +31,20 @@
 		74AA92B51E37A648009C3992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AA92B31E37A648009C3992 /* LaunchScreen.storyboard */; };
 		86654B00E6DDE9CE63F9E300 /* Pods_PuertaDeHierro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0203CE06E6126F2BEE63AADA /* Pods_PuertaDeHierro.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		749CF62C1E3AE426001AA2A6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				749CF62B1E3AE425001AA2A6 /* Pods_PuertaDeHierro.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0203CE06E6126F2BEE63AADA /* Pods_PuertaDeHierro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuertaDeHierro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,9 +58,12 @@
 		19BEA8021E3A06F900B8E1BB /* subCellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		19C9FBDC1E3906570039A94C /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		44AE2F13363C6DC0AB8E47E4 /* Pods-PuertaDeHierro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuertaDeHierro.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuertaDeHierro/Pods-PuertaDeHierro.release.xcconfig"; sourceTree = "<group>"; };
+		74398C551E3B301400DC3184 /* RecommendationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationModel.swift; sourceTree = "<group>"; };
+		74398C571E3B320E00DC3184 /* HeaderRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderRow.swift; sourceTree = "<group>"; };
 		749540C31E382D1D00F053D8 /* roundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roundedButton.swift; sourceTree = "<group>"; };
 		749540C81E3969D200F053D8 /* signUpFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpFirstViewController.swift; sourceTree = "<group>"; };
 		749540CA1E3972DD00F053D8 /* signUpSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpSecondViewController.swift; sourceTree = "<group>"; };
+		749CF62D1E3B0B39001AA2A6 /* recommendationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recommendationsViewController.swift; sourceTree = "<group>"; };
 		74AA92A71E37A648009C3992 /* PuertaDeHierro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuertaDeHierro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74AA92AA1E37A648009C3992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74AA92AC1E37A648009C3992 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86654B00E6DDE9CE63F9E300 /* Pods_PuertaDeHierro.framework in Frameworks */,
+				749CF62A1E3AE425001AA2A6 /* Pods_PuertaDeHierro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,13 +128,16 @@
 				195E6AA41E3AB9CA00F6E88E /* contractTableViewController.swift */,
 				74AA92AA1E37A648009C3992 /* AppDelegate.swift */,
 				74AA92AC1E37A648009C3992 /* ViewController.swift */,
+				74398C551E3B301400DC3184 /* RecommendationModel.swift */,
 				74AA92AE1E37A648009C3992 /* Main.storyboard */,
+				749CF62D1E3B0B39001AA2A6 /* recommendationsViewController.swift */,
 				195E6A9C1E3A83DF00F6E88E /* serviceListViewController.swift */,
 				195E6A9E1E3AA1E600F6E88E /* serviceCellTableViewCell.swift */,
 				19BEA8021E3A06F900B8E1BB /* subCellCollectionViewCell.swift */,
 				19BEA8001E39FF5800B8E1BB /* ServiceModel.swift */,
 				19BEA7FC1E39F46300B8E1BB /* servicesViewController.swift */,
 				19BEA7FA1E39F12000B8E1BB /* SectionRow.swift */,
+				74398C571E3B320E00DC3184 /* HeaderRow.swift */,
 				749540CA1E3972DD00F053D8 /* signUpSecondViewController.swift */,
 				749540C81E3969D200F053D8 /* signUpFirstViewController.swift */,
 				19C9FBDC1E3906570039A94C /* loginViewController.swift */,
@@ -137,6 +163,7 @@
 				74AA92A51E37A648009C3992 /* Resources */,
 				F167E5324C10188FF0C07762 /* [CP] Embed Pods Frameworks */,
 				83CE1FE3DFAED44695F76398 /* [CP] Copy Pods Resources */,
+				749CF62C1E3AE426001AA2A6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,9 +285,12 @@
 				19C9FBDD1E3906570039A94C /* loginViewController.swift in Sources */,
 				74AA92AD1E37A648009C3992 /* ViewController.swift in Sources */,
 				195E6AA51E3AB9CA00F6E88E /* contractTableViewController.swift in Sources */,
+				749CF62E1E3B0B3A001AA2A6 /* recommendationsViewController.swift in Sources */,
 				74AA92AB1E37A648009C3992 /* AppDelegate.swift in Sources */,
+				74398C581E3B320E00DC3184 /* HeaderRow.swift in Sources */,
 				749540C41E382D1D00F053D8 /* roundedButton.swift in Sources */,
 				749540C91E3969D300F053D8 /* signUpFirstViewController.swift in Sources */,
+				74398C561E3B301400DC3184 /* RecommendationModel.swift in Sources */,
 				195E6A9D1E3A83DF00F6E88E /* serviceListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

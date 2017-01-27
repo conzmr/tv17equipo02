@@ -52,8 +52,9 @@ class contractTableViewController: UITableViewController {
     @IBAction func requestFee(_ sender: Any) {
         
         //Quizá agregar un id
-        let data 1 = ["Hola":"prueba"]
-        self.ref.child("requests").child(userid+service+specialty).setValue(data1)
+        let data1 = ["userid":self.userid, "street": self.street.text, "city": self.city.text, "state":self.state.text, "zipcode": self.zipcode.text, "medication": self.medicine.text, "clinicalstatus": self.status.text, "diagnosis": self.diagnosis.text, "specialrequest": self.requests.text, "allergies": self.allergies.text, "radiation": self.radiation.text, "chemo":self.chemo.text, "surgery": self.surgery.text, "comment":self.comments.text]
+        
+        self.ref.child("requests").child(userid!+specialty).setValue(data1)
         
         print("success")
     }
