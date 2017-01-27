@@ -18,6 +18,8 @@ class serviceListViewController: UIViewController, UITableViewDataSource, UITabl
     var services:[String: AnyObject] = [:]
     var keys:[String] = []
     
+    var selected:String = ""
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var image: UIImageView!
@@ -71,11 +73,20 @@ class serviceListViewController: UIViewController, UITableViewDataSource, UITabl
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if (FIRAuth.auth()?.currentUser) != nil {
             // User is signed in.
+            self.selected = self.keys[indexPath.row]
+
             performSegue(withIdentifier: "contractSegue", sender: self)
-            print(FIRAuth.auth()?.currentUser?.uid)
         } else {
             // No user is signed in.
             performSegue(withIdentifier: "loginContract", sender: self)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "contractSegue"){
+            let destination:contractTableViewController = segue.destination as! contractTableViewController
+            destination.specialty = self.specialty
+            destination.service = self.selected
         }
     }
     

@@ -15,7 +15,11 @@ class contractTableViewController: UITableViewController {
     var specialty:String = ""
     var service:String = ""
     var userid = FIRAuth.auth()?.currentUser?.uid
-    
+    var ref:FIRDatabaseReference! = FIRDatabase.database().reference()
+    var userinfo:[String:AnyObject] = [:]
+
+    @IBOutlet weak var request: roundedButton!
+
     @IBOutlet weak var street: UITextField!
     @IBOutlet weak var city: UITextField!
     @IBOutlet weak var state: UITextField!
@@ -41,9 +45,17 @@ class contractTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         print(specialty)
         print(service)
-        print(userid)º
+        print(userid)
         
     }
   
+    @IBAction func requestFee(_ sender: Any) {
+        
+        //Quizá agregar un id
+        let data 1 = ["Hola":"prueba"]
+        self.ref.child("requests").child(userid+service+specialty).setValue(data1)
+        
+        print("success")
+    }
 
 }

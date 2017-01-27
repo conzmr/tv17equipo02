@@ -758,6 +758,9 @@
                                                     <state key="normal" title="REQUEST FEE AND ELEGIBILITY">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="requestFee:" destination="6vi-rD-lxd" eventType="touchUpInside" id="Qk6-Vk-Jcv"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -812,6 +815,7 @@
                         <outlet property="diagnosis" destination="Kax-M3-dSo" id="DVo-7d-hit"/>
                         <outlet property="medicine" destination="JI1-y8-PSS" id="9am-wJ-762"/>
                         <outlet property="radiation" destination="RS9-TI-iS2" id="VM9-Qs-Yun"/>
+                        <outlet property="request" destination="s9b-mT-tv9" id="Khs-4K-DB5"/>
                         <outlet property="requests" destination="zZU-kU-t39" id="gIu-o0-x0o"/>
                         <outlet property="state" destination="7h4-Pl-JnC" id="k79-ns-gaB"/>
                         <outlet property="status" destination="5VE-CH-vFd" id="IZl-db-9kJ"/>
