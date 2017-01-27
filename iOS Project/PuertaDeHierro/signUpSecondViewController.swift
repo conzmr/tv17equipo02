@@ -44,6 +44,14 @@ class signUpSecondViewController: UIViewController {
     }
     
     @IBAction func createAccount(_ sender: Any) {
+        
+        if countryTxt.text == "" || weightTxt.text == "" || phoneTxt.text == "" || heightTxt.text == ""{
+            let alert = UIAlertController(title: "Information Missing", message: "Make sure all the blanks are filled.", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+
+        }
         let country:String = self.countryTxt.text!
         let weight = self.weightTxt.text!
         let phone = self.phoneTxt.text!

@@ -12,4 +12,5 @@ class subCellCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var descLabel: UILabel!
 }

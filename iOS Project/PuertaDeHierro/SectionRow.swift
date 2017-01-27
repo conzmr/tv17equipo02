@@ -8,10 +8,14 @@
 
 import UIKit
 
-class SectionRow: UITableViewCell {
+class SectionRow: UITableViewCell, UICollectionViewDataSource {
     
     var cat:Section? = nil
+    var phone:String = ""
+    var maps:String = ""
 
+
+    var delegate: ShowOptionsDelegate? = nil
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,11 +26,6 @@ class SectionRow: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
-}
-
-extension SectionRow : UICollectionViewDataSource {
-
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cat!.object.count
@@ -36,25 +35,27 @@ extension SectionRow : UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "subCell", for: indexPath) as! subCellCollectionViewCell
         cell.image.image = cat?.object[indexPath.row].img
         cell.label.text = cat?.object[indexPath.row].name
-        
+        cell.descLabel.text = cat?.object[indexPath.row].desc
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(self.cat?.name ?? "None")
-        print(indexPath.row)
+        delegate?.showOptions(name: (self.cat?.name)!, option: indexPath.row)
     }
+    
+    
+
     
 }
 
 extension SectionRow : UICollectionViewDelegateFlowLayout {
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+   /* func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let itemsPerRow:CGFloat = 1
         let hardCodedPadding:CGFloat = 5
         let itemWidth = (collectionView.bounds.width / itemsPerRow) - (2*hardCodedPadding)
         let itemHeight = collectionView.bounds.height - (2 * hardCodedPadding)
         return CGSize(width: itemWidth, height: itemHeight)
-    }
+    }*/
     
 }
