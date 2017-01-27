@@ -30,12 +30,15 @@ var arrGender= [{gender:"male", c:0},{gender:"female", c:0}];
       else{
         array[2].z++;
       }
+<<<<<<< HEAD
 
       if(snap.val().gender=="M"){ //SEXO
         arrGender[0].c++;			//SEXO
       }else if(snap.val().gender=="F"){ //SEXO
         arrGender[1].c++; 			//SEXO
       }
+=======
+>>>>>>> bb89f429afb3c519fcbe72b48fc084ebbf477501
     });
 
 }());
@@ -93,7 +96,11 @@ var loadMap = function () {
                 }
             }]
         });
+<<<<<<< HEAD
 
+=======
+};
+>>>>>>> bb89f429afb3c519fcbe72b48fc084ebbf477501
 
 var data = [
 
