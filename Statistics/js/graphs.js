@@ -19,27 +19,19 @@ var array = [{code:"MX", z:0},{code:"US", z:0},{code:"CA", z:0}];
 
     var refOn = refUsers.on('child_added', function(snap){
       if(snap.val().country == "Mexico"){
-        console.log(array[0].code+array[0].z);
         array[0].z++;
-
       }
       else if (snap.val().country == "USA"){
-        console.log(array[1].z);
         array[1].z++;
       }
       else{
-        console.log(array[2].z);
         array[2].z++;
       }
-      return array;
     });
 
 }());
 
-
-$(function () {
-    $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=world-population.json&callback=?', function (data ) {
-
+var loadMap = function () {
         Highcharts.mapChart('container', {
         	colors: ['#86B4F0'],
             chart: {
@@ -84,17 +76,15 @@ $(function () {
                 type: 'mapbubble',
                 name: 'Population 2013',
                 joinBy: ['iso-a2', 'code'],
-                data: refOn,
+                data: array,
                 minSize: 4,
                 maxSize: '8%',
                 tooltip: {
-                    pointFormat: '{point.code}: {point.z}'
+                    pointFormat: '{point.code}: {point.z} thousands'
                 }
             }]
         });
-
-    });
-});
+};
 
 var data = [
 
